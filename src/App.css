@@ -1,0 +1,24 @@
+.sidebar .navigation{
+  font-weight: bold;
+}
+.nav-item:hover{
+  display: inline;
+  transform: translateX(20px);
+}
+.active{
+  transform: translateX(20px);
+}
+#about h3,#experience h3,#projects h3{
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+#experience,#projects{
+  margin-top: 2%;
+}
+.gradient-text{
+  background-image: linear-gradient(to right, #00b4d8, #48cae4);
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent;
+}
