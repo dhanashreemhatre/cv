@@ -1,20 +1,27 @@
 [
-    {
-      "name": "Chromatic Infosystem Website",
-      "tech_stack": "Wix Editor | Image Editing Tool | CMS ",
-      "description": "Description of Project 1",
-      "image": "src/Components/assets/images/project-images/chromatic-website/robo-lab-page.png"
-    },
-    {
-      "name": "Project 2",
-      "tech_stack": "Tech Stack 2",
-      "description": "Description of Project 2",
-      "image": "src/Components/assets/images/project-images/chromatic-website/robo-lab-page.png"
-    },
-    {
-      "name": "Project 3",
-      "tech_stack": "Tech Stack 3",
-      "description": "Description of Project 3",
-      "image": "src/Components/assets/images/project-images/chromatic-website/robo-lab-page.png"
-    }
-  ]
+  {
+    "id": 1,
+    "name": "Chromatic Infosystem Website",
+    "tech_stack": "Wix Editor | Image Editing Tool | CMS ",
+    "description": "As part of a collaborative effort with Chromatic, a leading provider of innovative solutions, I played a pivotal role in developing their flagship website using the Wix Editor platform. The Chromatic website serves as a dynamic showcase of their products, solutions, and upcoming projects, providing visitors with an immersive and informative experience.",
+    "image": "src/Components/assets/images/project-images/chromatic-website/robo-lab-page.png",
+    "technologies": "Wix Editor, HTML/CSS, JavaScript",
+    "Role": ["1)Collaborated with the Chromatic team to define project requirements and objectives. ", "2) Designed and developed various sections and pages of the website. ", "3) Implemented custom features and functionalities to enhance user experience.", "4) Conducted thorough testing and troubleshooting to ensure cross-browser compatibility and responsiveness.", "5) Provided ongoing support and maintenance to ensure the website's continued success."],
+    "Impact": ["Successfully launched a visually appealing and user-friendly website that effectively showcases Chromatic's products and solutions.", "Increased brand visibility and engagement through an intuitive and informative online presence.", "Empowered Chromatic to communicate their offerings and upcoming projects to a global audience, driving business growth and expansion opportunities."],
+    "url": "https://www.chromatic.co.in/"
+  },
+  {
+    "id": 2,
+    "name": "Project 2",
+    "tech_stack": "Tech Stack 2",
+    "description": "Description of Project 2",
+    "image": "src/Components/assets/images/project-images/chromatic-website/robo-lab-page.png"
+  },
+  {
+    "id": 3,
+    "name": "Project 3",
+    "tech_stack": "Tech Stack 3",
+    "description": "Description of Project 3",
+    "image": "src/Components/assets/images/project-images/chromatic-website/robo-lab-page.png"
+  }
+]

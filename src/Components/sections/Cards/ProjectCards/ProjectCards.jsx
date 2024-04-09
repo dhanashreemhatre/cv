@@ -2,7 +2,7 @@ import React from 'react';
 import './ProjectCards.css';
 
 function ProjectCards({ project }) {
-  const { name, tech_stack, description, image } = project;
+  const { name, tech_stack, short_description, image } = project;
 
   return (
     <div className='flex flex-col gap-3 project-card'>
@@ -11,7 +11,7 @@ function ProjectCards({ project }) {
       <div>
         <h2>{name}</h2>
         <span>{tech_stack}</span>
-        <p>{description}</p>
+        <p>{short_description}</p>
       </div>
     </div>
   );

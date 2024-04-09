@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div className='sidebar flex flex-col justify-self-center p-4 mt-20'>
       <div>
-        <h1 className='text-6xl font-sans hover:font-serif'>Hello <br/>I am <span className='gradient-text'>&lt;Dhanashree/&gt;</span></h1>
+        <h1 className='text-6xl font-sans'>Hello <br/>I am <span className='gradient-text hover:font-serif'>&lt;Dhanashree/&gt;</span></h1>
         <h4 className='text-2xl mt-3'>| Full stack Developer | Python Developer |</h4>
         <p className='text-lg mt-5 text-slate-400'>I build pixel-perfect, engaging, and accessible digital experiences.</p>
       </div>
