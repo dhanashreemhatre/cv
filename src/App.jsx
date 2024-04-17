@@ -15,13 +15,10 @@ function App() {
               <SideBar />
             </div>
             <div>
-              <Routes> {/* Use Routes instead of Switch */}
-                <Route path="/projects/:projectId" element={<ProjectDetail />} /> {/* Use element prop */}
+              <Routes> {/* Define all your routes inside a single Routes component */}
+                <Route path="/projects/:projectId" element={<ProjectDetail />} /> {/* Specify the component to render using the element prop */}
+                <Route path="/" element={<MainContent />} /> {/* Set up a Route for the root path */}
               </Routes>
-              <Routes>
-                <Route path="/" element={MainContent}/>
-              </Routes>
-          
             </div>
           </div>
         </div>
