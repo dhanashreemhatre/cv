@@ -22,3 +22,6 @@
   background-clip: text;
   color: transparent;
 }
+.girl-container svg{
+  height: 300px;
+}

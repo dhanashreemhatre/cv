@@ -11,7 +11,7 @@ function App() {
       <div className='dark:bg-black'>
         <div className='relative min-h-screen'>
           <div className='grid grid-cols-1 sm:grid-cols-2'>
-            <div className='sticky top-0 h-screen'>
+            <div className='sticky top-0 h-screen hidden sm:block'>
               <SideBar />
             </div>
             <div>
