@@ -1,44 +1,61 @@
 "use client"
-import './App.css';
+// src/App.jsx
 import React, { useState, useEffect } from 'react';
+import './App.css';
 import MainContent from './Components/MainContent';
 import SideBar from './Components/SideBar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes component
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './Components/sections/Navbar/Navbar';
 import ProjectDetail from './Components/sections/ProjectDetail';
+import DarkModeToggle from './Components/DarkModeToggle';
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    return localStorage.getItem('theme') === 'dark';
+  });
 
   useEffect(() => {
-    // Simulate loading time with setTimeout
     const timer = setTimeout(() => setLoading(false), 3000);
-
-    // Clear the timer on component unmount to prevent memory leaks
     return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [isDarkMode]);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
     <Router>
-    {loading ? ( // Render the loader if loading state is true
-      <div id="loader" className='h-screen flex justify-center items-center bg-black'>
-        <div className="waves">
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
+      {loading ? (
+        <div id="loader" className='h-screen flex justify-center items-center bg-black'>
+          <div className="waves">
+            <div className="wave"></div>
+            <div className="wave"></div>
+            <div className="wave"></div>
+            <div className="wave"></div>
+            <div className="wave"></div>
+            <div className="wave"></div>
+            <div className="wave"></div>
+            <div className="wave"></div>
+            <div className="wave"></div>
+            <div className="wave"></div>
+          </div>
         </div>
-      </div>
-    ) : ( // Render the main content once loading is complete
-      <div className='dark:bg-black'>
-        <div className='relative min-h-screen'>
-          <div className='grid grid-cols-1 sm:grid-cols-2'>
-            <div className='sticky top-0 h-screen hidden sm:block'>
+      ) : (
+        <div className={`${isDarkMode ? 'dark' : ''} min-h-screen`}>
+          <Navbar />
+          <div className="relative min-h-screen grid grid-cols-1 sm:grid-cols-2">
+            <div className="sticky top-0 h-screen hidden sm:block">
               <SideBar />
             </div>
             <div>
@@ -48,10 +65,12 @@ function App() {
               </Routes>
             </div>
           </div>
+          <div className="fixed bottom-4 right-4">
+            <DarkModeToggle isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+          </div>
         </div>
-      </div>
-    )}
-  </Router>
+      )}
+    </Router>
   );
 }
 

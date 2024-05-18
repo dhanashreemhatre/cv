@@ -1,13 +1,6 @@
 .sidebar .navigation{
   font-weight: bold;
 }
-.nav-item:hover{
-  display: inline;
-  transform: translateX(20px);
-}
-.active{
-  transform: translateX(20px);
-}
 #about h3,#experience h3,#projects h3{
   font-size: 28px;
   font-weight: bold;

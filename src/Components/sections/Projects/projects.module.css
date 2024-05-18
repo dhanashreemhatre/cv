@@ -14,10 +14,11 @@
     padding: 4%;
     perspective: 900px;
     transform: rotateX(60deg) scale3d(0.8, 1, 1.7);
+    transition: transform 0.5s ease-in-out; 
   }
   .card_container:hover{
     transform: rotateX(0deg) scale3d(1,1,1) translateY(10px);
-    transition: .5s all ease;
+    transition: .5s all ease-in-out;
   
   }
   .card-container img{

@@ -1,0 +1,15 @@
+.navbar{
+    z-index: 999;
+}
+.navbar .drawer{
+    width: 40%;
+    z-index: 99;
+    padding-left: 2rem;
+}
+.navbar button{
+    z-index: 100;
+}
+.navbar .nav-item{
+    font-size: 20px;
+    font-weight: bold;
+}
