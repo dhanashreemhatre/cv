@@ -1,6 +1,9 @@
 .sidebar .navigation{
   font-weight: bold;
 }
+.sidebar.light{
+  background-color: #CDE8E5;
+}
 #about h3,#experience h3,#projects h3{
   font-size: 28px;
   font-weight: bold;
@@ -17,6 +20,9 @@
 }
 .girl-container svg{
   height: 300px;
+}
+.right.light{
+  background-color: #CDE8E5;
 }
 
 /* Loading animations */

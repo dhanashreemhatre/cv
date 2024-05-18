@@ -5,9 +5,9 @@ import Project from './sections/Project'
 import Projects from './sections/Projects/Projects'
 
 
-function MainContent() {
+function MainContent({isDarkMode}) {
   return (
-    <div className='sidebar flex flex-col justify-self-center p-4'>
+    <div className={`sidebar ${isDarkMode?'dark':'light'} flex flex-col justify-self-center p-4`}>
      
         <About/>
 

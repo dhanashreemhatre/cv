@@ -53,15 +53,16 @@ function App() {
         </div>
       ) : (
         <div className={`${isDarkMode ? 'dark' : ''} min-h-screen`}>
-          <Navbar />
+          
           <div className="relative min-h-screen grid grid-cols-1 sm:grid-cols-2">
             <div className="sticky top-0 h-screen hidden sm:block">
+            <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
               <SideBar />
             </div>
-            <div>
+            <div className={`right ${isDarkMode ? 'dark' : 'light'} `}>
               <Routes>
                 <Route path="/projects/:projectId" element={<ProjectDetail />} />
-                <Route path="/" element={<MainContent />} />
+                <Route path="/" element={<MainContent isDarkMode={isDarkMode}/>} />
               </Routes>
             </div>
           </div>

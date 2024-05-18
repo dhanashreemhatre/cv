@@ -5,6 +5,7 @@
     width: 40%;
     z-index: 99;
     padding-left: 2rem;
+   
 }
 .navbar button{
     z-index: 100;
@@ -12,4 +13,12 @@
 .navbar .nav-item{
     font-size: 20px;
     font-weight: bold;
+}
+.drawer.light{
+    color: white;
+    background-color: #4D869C !important;
+}
+.drawer.dark{
+    color: white;
+    background-color: rgb(31, 31, 31) !important;
 }

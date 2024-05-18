@@ -10,6 +10,7 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
+  
 
   return (
     <div className='navbar'>
@@ -17,7 +18,7 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
         {isOpen ? <FaTimes /> : <FaBars />}
       </button>
 
-      <div className={`drawer fixed top-0 left-0 h-full bg-gray-800 text-white transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}>
+      <div className={`drawer ${isDarkMode ? 'dark' : 'light'} fixed top-0 left-0 h-full text-white transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}>
         <div className="flex flex-col p-4 space-y-4">
       <button onClick={toggleDrawer} className="text-2xl p-4"><FaTimes /></button>
 

@@ -8,8 +8,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(94, 94, 94, 0.87);
-  background-color: #ffffff;
+  color: #282828;
+  background-color: #EEF7FF;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,6 +17,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .dark{
-  background-color: rgba(94, 94, 94, 0.87);
+  background-color: #000;
   color: #ffffff;
 }
