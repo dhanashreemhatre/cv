@@ -1,5 +1,5 @@
 {
-  "name": "dhanashree_portfolio",
+  "name": "3d-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,11 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@svgr/webpack": "^8.1.0",
+    "@emailjs/browser": "^4.3.3",
+    "@react-spring/three": "^9.7.3",
+    "@react-three/drei": "^9.107.0",
+    "@react-three/fiber": "^8.16.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.0.1",
-    "react-scroll": "^1.9.0"
+    "react-router-dom": "^6.23.1",
+    "react-vertical-timeline-component": "^3.6.0",
+    "three": "^0.165.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
@@ -25,10 +29,8 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "gh-pages": "^6.1.1",
     "postcss": "^8.4.38",
-    "react-router-dom": "^6.22.3",
-    "tailwindcss": "^3.4.3",
+    "tailwindcss": "^3.4.4",
     "vite": "^5.2.0"
   }
 }
