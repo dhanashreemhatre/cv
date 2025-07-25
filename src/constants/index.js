@@ -1,4 +1,4 @@
-import { trippy_d,tescom,chromatic} from "../assets/images";
+import { trippy_d, tescom, chromatic } from "../assets/images";
 import {
     car,
     contact,
@@ -112,6 +112,26 @@ export const skills = [
         imageUrl: typescript,
         name: "TypeScript",
         type: "Frontend",
+    },
+    {
+        imageUrl: python, // You can replace this with a Docker icon later
+        name: "Docker",
+        type: "DevOps",
+    },
+    {
+        imageUrl: nodejs, // You can replace this with an AI/ML icon later
+        name: "Artificial Intelligence",
+        type: "AI/ML",
+    },
+    {
+        imageUrl: python, // You can replace this with a LangChain icon later
+        name: "LangChain",
+        type: "AI/ML",
+    },
+    {
+        imageUrl: nodejs, // You can replace this with a FastAPI icon later
+        name: "FastAPI",
+        type: "Backend",
     }
 ];
 
@@ -146,12 +166,26 @@ export const experiences = [
         company_name: "Chromatic Infosystems Pvt. Ltd.",
         icon: chromatic,
         iconBg: "#b7e4c7",
-        date: "Oct 2023 - Present",
+        date: "Oct 2023 - June 2024",
         points: [
             "Led multiple projects, demonstrating strong project management and multitasking skills.",
             "Optimized website performance through code optimization, image compression, and caching, leading to faster page load times.",
             "Developed a payslip generator, automating payroll processes and ensuring accurate salary calculations.",
             "Worked on visual programming for a STEM kit product, enhancing software interaction with hardware systems.",
+        ],
+    },
+    {
+        title: "Software Developer",
+        company_name: "Rejolut Solution",
+        icon: chromatic, // You may want to add a Rejolut logo later
+        iconBg: "#f0f9ff",
+        date: "July 2024 - Present",
+        points: [
+            "Took ownership of 4+ AI-based products including RejoAI, Edelweiss bots, and PolicyHub, ensuring end-to-end delivery and maintenance.",
+            "Developed production-grade AI solutions using FastAPI, LangChain, and OpenAI APIs for document processing and intelligent automation.",
+            "Managed complete project lifecycle from development to deployment, implementing robust RAG-based systems for enterprise clients.",
+            "Led client communication and requirement gathering sessions, translating business needs into technical solutions.",
+            "Built and deployed scalable backend systems using Python, FastAPI, SQLModel, and SQLAlchemy with containerized Docker deployments.",
         ],
     }
 ];
@@ -176,12 +210,19 @@ export const socialLinks = [
 
 export const projects = [
     {
+        iconUrl: summiz,
+        theme: 'btn-back-blue',
+        name: 'C3Chat - Advanced AI Chat Interface',
+        description: 'Comprehensive AI chat application with unified interface for multiple AI models (GPT-4, Claude, Gemini). Features web search integration, secure authentication, chat management, and modern UI. Built with Next.js, TypeScript, and NextAuth.js.',
+        link: 'https://c3chatai.vercel.app',
+    },
+    {
         iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'Multi Vendor Ecommerce Website',
         description: 'Multiple Vendors can register and sell their products. Full fledged E-Commerce Website. Technology used Typescript, Next js, Tailwind CSS, python (Djnago) backend-(RestFramework) ',
         link: 'https://github.com/dhanashreemhatre/Multi-Vendor-Ecommerce-Platform',
-    }, 
+    },
     {
         iconUrl: threads,
         theme: 'btn-back-green',

@@ -3,7 +3,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
-import CTA  from "../components/CTA";
+import CTA from "../components/CTA";
 import { experiences, skills } from "../constants";
 
 import "react-vertical-timeline-component/style.min.css";
@@ -22,8 +22,10 @@ const About = () => {
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          Software Engineer based in Mumbai, specializing in technical
-          education through hands-on learning and building applications.
+          AI/Full Stack Software Engineer based in Mumbai with 1.5 years of experience
+          in developing production-grade AI systems and web applications. Specialized in
+          FastAPI, LangChain, React, and end-to-end project ownership with strong client
+          communication skills.
         </p>
       </div>
 
@@ -50,8 +52,9 @@ const About = () => {
         <h3 className='subhead-text'>Work Experience.</h3>
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p>
-            I've worked with all sorts of companies, leveling up my skills and
-            teaming up with smart people. Here's the rundown:
+            I've worked with diverse companies, building AI-powered solutions and full-stack
+            applications while taking complete project ownership. From AI bots to enterprise
+            tools, here's my journey:
           </p>
         </div>
 
